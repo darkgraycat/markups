@@ -358,4 +358,40 @@ h1, h2, h3.h4 {
   height: 100%;
 }
 
+.footer {
+  background-color: #FBFBFB;
+}
+.footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__logo {
+  display: flex;
+  align-items: center;
+  background-color: #EFF3FB;
+  color: #1968FC;
+  font-family: Muli-Bold;
+  font-size: 14px;
+}
+.footer__logo div {
+  padding: 0 24px;
+}
+.footer__links a {
+  font-family: Muli-Bold;
+  font-size: 13px;
+  text-decoration: none;
+  text-align: center;
+  color: #112233;
+  padding: 16px;
+  min-width: 120px;
+  border-top: 4px solid transparent;
+  box-sizing: border-box;
+  display: inline-block;
+}
+.footer__socials a {
+  display: inline-block;
+  padding: 20px;
+}
+
 /*# sourceMappingURL=style.css.map */

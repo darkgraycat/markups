@@ -1,0 +1,42 @@
+.footer {
+  background-color: #FBFBFB;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    background-color: #EFF3FB;
+    color: #1968FC;
+    font-family: Muli-Bold;
+    font-size: 14px;
+    div {
+      padding: 0 24px;
+    }
+  }
+
+  &__links {
+    a {
+      font-family: Muli-Bold;
+      font-size: 13px;
+      text-decoration: none;
+      text-align: center;
+      color: #112233;
+      padding: 16px;
+      min-width: 120px;
+      border-top: 4px solid transparent;
+      box-sizing: border-box;
+      display: inline-block;
+    }
+  }
+
+  &__socials {
+    a {
+      display: inline-block;
+      padding: 20px;
+    }
+  }
+}
