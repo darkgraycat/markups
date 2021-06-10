@@ -1,15 +1,10 @@
 @import 'fonts.scss';
 
-@import 'header.scss';
-@import 'hero-section.scss';
-@import 'features-section.scss';
-@import 'whois-section.scss';
-@import 'what-section.scss';
-
 // novorossiyskaya 16
 .hero-section {display: none;}
 .features-section {display: none;}
 .whois-section {display: none;}
+.what-section {display: none;}
 
 body, html {
   margin: 0px;
@@ -47,10 +42,13 @@ h1,h2,h3.h4 {
   background-color: #1968fc;
   text-shadow: 0 0px 4px rgba(232, 240, 255, 0.4);
   box-shadow: 0 10px 40px 0 rgba(25, 104, 252, 0.3);
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
 
   &:hover,
   &:focus {
-    background-color: #1968fcbb;
+    opacity: 0.8;
   }
 }
 
@@ -74,3 +72,12 @@ h1,h2,h3.h4 {
     box-shadow: 0 2px 0 0 #d1e1fe;
   }
 }
+
+
+@import 'header.scss';
+@import 'hero-section.scss';
+@import 'features-section.scss';
+@import 'whois-section.scss';
+@import 'what-section.scss';
+@import 'dont-section.scss';
+@import 'contact-section.scss';

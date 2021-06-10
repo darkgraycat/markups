@@ -1,0 +1,31 @@
+.dont-section {
+  padding: 80px 0;
+  background-color: #1968fc;
+  background-image: url('../assets/illustration-whiteglove.png');
+  background-repeat: no-repeat;
+  background-position: top right;
+
+  .title {
+    color: #ffffff;
+    &::before {
+      background-color: #ffffff;
+    }
+  }
+
+  &__text {
+    font-family: Muli-Regular;
+    font-size: 20px;
+    line-height: 40px;
+    color: #ffffff;
+    max-width: 640px;
+    margin-bottom: 40px;
+  }
+
+  &__button {
+    background-color: #ffffff;
+    color: #1968fc;
+    box-shadow: 4px 4px 20px 0 rgba(255, 255, 255, 0.4);
+    width: 100%;
+    max-width: 320px;
+  }
+}

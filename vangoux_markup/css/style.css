@@ -10,6 +10,86 @@
   font-family: Muli-Regular;
   src: url("../fonts/Muli-Regular.ttf");
 }
+.hero-section {
+  display: none;
+}
+
+.features-section {
+  display: none;
+}
+
+.whois-section {
+  display: none;
+}
+
+.what-section {
+  display: none;
+}
+
+body, html {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+h1, h2, h3.h4 {
+  font-weight: normal;
+}
+
+.wrapper {
+  background: url("../assets/background-decor.svg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.button {
+  padding: 16px 32px;
+  display: inline-block;
+  font-family: Muli-Bold;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #1968fc;
+  text-shadow: 0 0px 4px rgba(232, 240, 255, 0.4);
+  box-shadow: 0 10px 40px 0 rgba(25, 104, 252, 0.3);
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+}
+.button:hover, .button:focus {
+  opacity: 0.8;
+}
+
+.title {
+  font-family: Muli-Regular;
+  font-size: 30px;
+  line-height: 60px;
+  color: #112233;
+  position: relative;
+  margin-bottom: 60px;
+}
+.title::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 80px;
+  height: 2px;
+  left: -40px;
+  bottom: -10px;
+  background-color: #1968fc;
+  box-shadow: 0 2px 0 0 #d1e1fe;
+}
+
 .header {
   padding: 30px 0;
 }
@@ -206,77 +286,76 @@
   margin-left: 20px;
 }
 
-.hero-section {
-  display: none;
+.dont-section {
+  padding: 80px 0;
+  background-color: #1968fc;
+  background-image: url("../assets/illustration-whiteglove.png");
+  background-repeat: no-repeat;
+  background-position: top right;
 }
-
-.features-section {
-  display: none;
-}
-
-.whois-section {
-  display: none;
-}
-
-body, html {
-  margin: 0px;
-  padding: 0px;
-  width: 100%;
-  height: 100%;
-}
-
-h1, h2, h3.h4 {
-  font-weight: normal;
-}
-
-.wrapper {
-  background: url("../assets/background-decor.svg") no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-}
-
-.container {
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.button {
-  padding: 16px 32px;
-  display: inline-block;
-  font-family: Muli-Bold;
-  font-size: 14px;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
+.dont-section .title {
   color: #ffffff;
-  background-color: #1968fc;
-  text-shadow: 0 0px 4px rgba(232, 240, 255, 0.4);
-  box-shadow: 0 10px 40px 0 rgba(25, 104, 252, 0.3);
 }
-.button:hover, .button:focus {
-  background-color: #1968fcbb;
+.dont-section .title::before {
+  background-color: #ffffff;
+}
+.dont-section__text {
+  font-family: Muli-Regular;
+  font-size: 20px;
+  line-height: 40px;
+  color: #ffffff;
+  max-width: 640px;
+  margin-bottom: 40px;
+}
+.dont-section__button {
+  background-color: #ffffff;
+  color: #1968fc;
+  box-shadow: 4px 4px 20px 0 rgba(255, 255, 255, 0.4);
+  width: 100%;
+  max-width: 320px;
 }
 
-.title {
-  font-family: Muli-Regular;
-  font-size: 30px;
-  line-height: 60px;
-  color: #112233;
-  position: relative;
-  margin-bottom: 60px;
+.contact-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 60px;
 }
-.title::before {
-  content: "";
+.contact-section .container {
+  max-width: 560px;
+  width: 100%;
+  margin: 0;
+}
+.contact-section__form .contact-form__input, .contact-section__form .contact-form__textarea {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.53px;
+  color: #141720;
+  border: 0;
+  outline: 0;
   display: block;
-  position: absolute;
-  width: 80px;
-  height: 2px;
-  left: -40px;
-  bottom: -10px;
-  background-color: #1968fc;
-  box-shadow: 0 2px 0 0 #d1e1fe;
+  border-bottom: 2px solid #1968fc;
+  padding: 16px 0;
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 450px;
+  float: right;
+}
+.contact-section__form .contact-form__input::placeholder, .contact-section__form .contact-form__textarea::placeholder {
+  color: #141720;
+}
+.contact-section__form .contact-form__textarea {
+  resize: none;
+}
+.contact-section__form .contact-form__button {
+  float: right;
+  max-width: 320px;
+  width: 100%;
+}
+.contact-section__map {
+  max-width: 100%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
