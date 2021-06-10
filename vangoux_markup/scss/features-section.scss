@@ -1,0 +1,52 @@
+.features-section {
+
+  
+  &__cards {
+
+    display: flex;
+    justify-content: space-between;
+
+    .card:nth-child(2){
+      margin-top: 40px;
+    }
+    .card:nth-child(3){
+      margin-top: 80px;
+    }
+
+    .card {
+
+      flex: 0 1 320px;
+      height: 290px;
+      background-color: #ffffff;
+      box-shadow: 0 20px 60px 0 rgba(49, 69, 244, 0.1);
+
+      &__header {
+        background-color: #f3f7ff;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+      &__img {
+        width: 120px;
+        height: 120px;
+      }
+      &__title {
+        font-family: Muli-SemiBold;
+        font-size: 20px;
+        line-height: 30px;
+        color: #112233;
+        flex: 0 1 160px;
+      }
+      &__text {
+        font-family: Muli-Regular;
+        font-size: 16px;
+        line-height: 30px;
+        color: #112233;
+        margin: 40px auto;
+        max-width: 240px;
+      }
+    }
+
+  }
+
+}
