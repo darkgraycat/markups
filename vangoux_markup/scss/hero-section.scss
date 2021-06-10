@@ -1,5 +1,7 @@
 .hero-section {
 
+  margin-bottom: 120px;
+
   &__header {
     background: url('../assets/illustration-main.png') no-repeat;
     background-position: 100% 350%;
@@ -35,7 +37,6 @@
     display: flex;
     justify-content: space-around;
     gap: 40px;
-    margin-bottom: 140px;
 
     .testimonial {
 

@@ -1,0 +1,36 @@
+.whois-section {
+  
+  margin-bottom: 120px;
+
+  &__cards {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    .card {
+
+      background-color: #ffffff;
+      box-shadow: 0 20px 60px 0 rgba(49, 69, 244, 0.1);
+      flex: 0 1 360px;
+      padding: 20px;
+      box-sizing: border-box;
+
+      &__title {
+        font-family: Muli-Bold;
+        font-size: 20px;
+        line-height: 40px;
+        color: #1967fa;
+        margin-bottom: 20px;
+      }
+      &__text {
+        font-family: Muli-Regular;
+        font-size: 16px;
+        line-height: 30px;
+        color: #112233;
+      }
+    }
+
+  }
+
+}
