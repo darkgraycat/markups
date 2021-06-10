@@ -1,0 +1,15 @@
+{
+  "name": "vangoux_markup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sass scss/index.scss:css/style.css --watch"
+  },
+  "author": "darkgraycat",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.34.1"
+  }
+}

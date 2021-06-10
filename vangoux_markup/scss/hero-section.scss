@@ -1,0 +1,86 @@
+.hero-section {
+
+  &__header {
+    background: url('../assets/illustration-main.png') no-repeat;
+    background-position: 100% 350%;
+    padding: 120px 0;
+  }
+
+  &__headline {
+    max-width: 600px;
+    margin: 0px;
+    font-family: Muli-SemiBold;
+    font-size: 40px;
+    line-height: 60px;
+    letter-spacing: 1px;
+    color: #11223f;
+  }
+
+  &__subheadline {
+    max-width: 600px;
+    font-family: Muli-Regular;
+    font-size: 20px;
+    line-height: 40px;
+    color: #11223f;
+  }
+
+
+  &__button {
+    margin-top: 20px;
+    width: 300px;
+  }
+
+  &__testimonials {
+
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+
+    .testimonial {
+
+      flex: 0 1 540px;
+      background-color: #ffffff;
+      box-shadow: 0 20px 60px 0 rgba(25, 104, 252, 0.1);
+      padding: 40px;
+
+      &__header {
+        display: flex;
+        align-items: center;
+        background: url('../assets/illustration-quote.png') no-repeat;
+        background-position: top right;
+      }
+
+      &__img {
+        width: 100px;
+        height: 100px;
+      }
+
+      &__name {
+        margin-left: 20px;
+        font-family: Muli-SemiBold;
+        font-size: 18px;
+        line-height: 30px;
+        color: #11223f;
+      }
+
+      &__position {
+        margin-left: 20px;
+        font-family: Muli-SemiBold;
+        font-size: 14px;
+        line-height: 30px;
+        color: #1967fa;
+      }
+
+      &__text {
+        margin-top: 40px;
+        font-family: Muli-Regular;
+        font-size: 16px;
+        line-height: 30px;
+        color: #11223f;
+      }
+
+    }
+
+  }
+
+}
