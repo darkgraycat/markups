@@ -179,11 +179,42 @@
   color: #112233;
 }
 
+.what-section {
+  margin-bottom: 120px;
+}
+.what-section__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.what-section__cards .card {
+  background-color: #ffffff;
+  box-shadow: 0 20px 60px 0 rgba(49, 69, 244, 0.1);
+  flex: 0 1 540px;
+  display: flex;
+  align-items: center;
+}
+.what-section__cards .card__img {
+  width: 80px;
+  height: 80px;
+}
+.what-section__cards .card__text {
+  font-family: Muli-SemiBold;
+  font-size: 18px;
+  line-height: 40px;
+  color: #000000;
+  margin-left: 20px;
+}
+
 .hero-section {
   display: none;
 }
 
 .features-section {
+  display: none;
+}
+
+.whois-section {
   display: none;
 }
 

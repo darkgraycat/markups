@@ -4,10 +4,12 @@
 @import 'hero-section.scss';
 @import 'features-section.scss';
 @import 'whois-section.scss';
+@import 'what-section.scss';
 
 // novorossiyskaya 16
 .hero-section {display: none;}
 .features-section {display: none;}
+.whois-section {display: none;}
 
 body, html {
   margin: 0px;
