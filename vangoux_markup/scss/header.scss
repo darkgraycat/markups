@@ -15,7 +15,8 @@
     &__item {
       font-family: Muli-Bold;
       font-size: 14px;
-      
+      position: relative;
+
       text-decoration: none;
       text-align: center;
       color: #000000;
@@ -24,10 +25,22 @@
       border-top: 4px solid transparent;
       box-sizing: border-box;
       display: inline-block;
+      &::before {
+        content: '';
+        display: block;
+        position: relative;
+        top: -10px;
+        width: 0%;
+        height: 2px;
+        background-color: #1968fc;
+        transition: width linear .5s;
+      }
 
       &:hover,
       &:focus {
-        border-color: #1968fc;
+        &::before {
+          width: 100%;
+        }
       }
     }
 

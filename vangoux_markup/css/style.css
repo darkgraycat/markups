@@ -92,6 +92,7 @@ h1, h2, h3.h4 {
 .header .navbar__item {
   font-family: Muli-Bold;
   font-size: 14px;
+  position: relative;
   text-decoration: none;
   text-align: center;
   color: #000000;
@@ -101,8 +102,18 @@ h1, h2, h3.h4 {
   box-sizing: border-box;
   display: inline-block;
 }
-.header .navbar__item:hover, .header .navbar__item:focus {
-  border-color: #1968fc;
+.header .navbar__item::before {
+  content: "";
+  display: block;
+  position: relative;
+  top: -10px;
+  width: 0%;
+  height: 2px;
+  background-color: #1968fc;
+  transition: width linear 0.5s;
+}
+.header .navbar__item:hover::before, .header .navbar__item:focus::before {
+  width: 100%;
 }
 .hero-section {
   margin: 0 auto;
