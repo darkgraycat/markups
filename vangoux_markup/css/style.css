@@ -115,6 +115,7 @@ h1, h2, h3.h4 {
 .header .navbar__item:hover::before, .header .navbar__item:focus::before {
   width: 100%;
 }
+
 .hero-section {
   margin: 0 auto;
   margin-bottom: 120px;
