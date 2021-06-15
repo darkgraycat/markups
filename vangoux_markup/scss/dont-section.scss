@@ -1,9 +1,9 @@
 .dont-section {
+
+  margin: 0 auto;
+
   padding: 80px 0;
   background-color: #1968fc;
-  background-image: url('../assets/illustration-whiteglove.png');
-  background-repeat: no-repeat;
-  background-position: top right;
 
   .title {
     color: #ffffff;
@@ -27,5 +27,11 @@
     box-shadow: 4px 4px 20px 0 rgba(255, 255, 255, 0.4);
     width: 100%;
     max-width: 320px;
+  }
+
+  &__img {
+    position: absolute;
+    top: -100px;
+    right: 0;
   }
 }

@@ -1,11 +1,13 @@
 .hero-section {
 
+  margin: 0 auto;
   margin-bottom: 120px;
 
   &__header {
     background: url('../assets/illustration-main.png') no-repeat;
     background-position: 100% 350%;
     padding: 120px 0;
+    margin-bottom: 80px;
   }
 
   &__headline {

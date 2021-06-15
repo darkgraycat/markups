@@ -1,11 +1,13 @@
 .whois-section {
-  
+
+  margin: 0 auto;
   margin-bottom: 120px;
 
   &__cards {
 
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: 20px;
 
     .card {

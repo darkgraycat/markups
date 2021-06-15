@@ -22,16 +22,21 @@ h1, h2, h3.h4 {
 }
 
 .wrapper {
-  background: url("../assets/background-decor.svg") no-repeat;
+  background: url("../assets/background-decor.png") no-repeat;
   background-size: cover;
   width: 100%;
-  height: 100%;
 }
 
 .container {
   max-width: 1120px;
   margin: 0 auto;
   padding: 0 15px;
+  position: relative;
+}
+@media (min-width: 1441px) {
+  .container {
+    max-width: 1350px;
+  }
 }
 
 .button {
@@ -75,6 +80,7 @@ h1, h2, h3.h4 {
 }
 
 .header {
+  margin: 0 auto;
   padding: 30px 0;
 }
 .header .navbar {
@@ -99,12 +105,14 @@ h1, h2, h3.h4 {
   border-color: #1968fc;
 }
 .hero-section {
+  margin: 0 auto;
   margin-bottom: 120px;
 }
 .hero-section__header {
   background: url("../assets/illustration-main.png") no-repeat;
   background-position: 100% 350%;
   padding: 120px 0;
+  margin-bottom: 80px;
 }
 .hero-section__headline {
   max-width: 600px;
@@ -170,6 +178,7 @@ h1, h2, h3.h4 {
 }
 
 .features-section {
+  margin: 0 auto;
   margin-bottom: 120px;
 }
 .features-section__cards {
@@ -215,11 +224,13 @@ h1, h2, h3.h4 {
 }
 
 .whois-section {
+  margin: 0 auto;
   margin-bottom: 120px;
 }
 .whois-section__cards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   gap: 20px;
 }
 .whois-section__cards .card {
@@ -244,11 +255,13 @@ h1, h2, h3.h4 {
 }
 
 .what-section {
+  margin: 0 auto;
   margin-bottom: 120px;
 }
 .what-section__cards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   gap: 40px;
 }
 .what-section__cards .card {
@@ -271,11 +284,9 @@ h1, h2, h3.h4 {
 }
 
 .dont-section {
+  margin: 0 auto;
   padding: 80px 0;
   background-color: #1968fc;
-  background-image: url("../assets/illustration-whiteglove.png");
-  background-repeat: no-repeat;
-  background-position: top right;
 }
 .dont-section .title {
   color: #ffffff;
@@ -298,11 +309,17 @@ h1, h2, h3.h4 {
   width: 100%;
   max-width: 320px;
 }
+.dont-section__img {
+  position: absolute;
+  top: -100px;
+  right: 0;
+}
 
 .contact-section {
+  margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   gap: 60px;
 }
 .contact-section .container {
@@ -320,6 +337,7 @@ h1, h2, h3.h4 {
   outline: 0;
   display: block;
   border-bottom: 2px solid #1968fc;
+  background: transparent;
   padding: 16px 0;
   margin-bottom: 30px;
   width: 100%;
@@ -340,9 +358,11 @@ h1, h2, h3.h4 {
 .contact-section__map {
   max-width: 100%;
   height: 100%;
+  box-shadow: 0 10px 40px 0 rgba(25, 104, 252, 0.3);
 }
 
 .footer {
+  margin: 0 auto;
   background-color: #FBFBFB;
 }
 .footer .container {
